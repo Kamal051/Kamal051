@@ -10,7 +10,7 @@ class AverageSaver {
     }
 
     public function saveAverage($name,$familyname,$password) {
-        $stmt = $this->connection->prepare("INSERT INTO askar (name,familyname,password) VALUES (?,?,?)");
+        $stmt = $this->connection->prepare("INSERT INTO kamal (name,familyname,password) VALUES (?,?,?)");
         $stmt->bind_param("sss", $name,$familyname,$password);
         $stmt->execute();
         $stmt->close();
@@ -21,7 +21,7 @@ class ConnectionToDatabase {
     private $host = "localhost";
     private $username = "root";
     private $password = "";
-    private $database = "armin";
+    private $database = "amiryusef";
     private $connection;
 
     public function __construct() {
@@ -83,11 +83,11 @@ $connection->getConnection()->close();
 ?>
 <href="human.css">
 <body  style="border:2px solid Tomato; text-align:center;">
-<h1 style="color:perpel;">armin</h1>
+<h1 style="color:perpel;">kamal</h1>
 <hr style="border:2px solid blue;">
-<h1 style="color:green;">askar</h1>
+<h1 style="color:green;">amiryusef</h1>
 <hr style="border:2px solid blue;">
-<h1 style="color:red;">arvand</h1>
+<h1 style="color:red;">brooz system</h1>
 <h1 style="border:2px solid blue;">
 <img src="Registet.jpg" width="200" height="200">
 
