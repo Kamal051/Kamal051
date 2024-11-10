@@ -109,5 +109,5 @@ $connection->getConnection()->close();
 <input type='password' name="password" placholder="password" id="password"><lable>رمز عبور</lable><br>
 <input type='submit' value="send" ><br>
 </form>
-<p><?php echo "<h1 style= 'color:red; text-align:center;'>ارمین عسکر </h1>"; 
+<p><?php echo "<h1 style= 'color:red; text-align:center;'>امیر یوسف کمالی </h1>"; 
 ?> </p>
